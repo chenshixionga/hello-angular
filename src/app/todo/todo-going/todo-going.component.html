@@ -1,0 +1,12 @@
+<p>
+  login success! state: {{state}？}
+</p>
+<a routerLink="/todo">Go Todo</a>
+<!--子路由直接写，不需要斜杠-->
+<a routerLink="one">one</a>
+<a routerLink="two">two</a>
+<router-outlet></router-outlet>
+<span>{{today}}</span> <br>
+<span>{{today|date}}</span> <br>
+<span>{{today|date:'yyyy-MM-dd' }}</span> <br>
+<span>{{today|date|trimSpace}}</span> <br>

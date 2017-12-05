@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of list">
+    <input id="item.id" [type]="item.type" (click)="toggle()" [name]="item.name" [checked]="item.check"/>
+    <label for="item.id">{{item.sname}}</label>
+  </li>
+</ul>
