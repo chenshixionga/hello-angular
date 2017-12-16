@@ -1,0 +1,19 @@
+[
+  {
+    "name":"liwei",
+    "age":"18",
+    "address":"厦门",
+    "sex":"男"
+  },
+  {
+    "name":"xiaoming",
+    "age":"18",
+    "address":"厦门",
+    "sex":"男"
+  },{
+  "name":"kankan",
+  "age":"18",
+  "address":"厦门",
+  "sex":"男"
+}
+]

@@ -1,0 +1,9 @@
+<h2>Heroes from JSON File</h2>
+
+<div *ngFor="let hero of ('../assets/json/cachePipe.json' | fetch) ">
+  {{hero.name}}
+</div>
+
+<p>Heroes as JSON:
+  {{'assets/json/cachePipe.json' | fetch | json}}
+</p>

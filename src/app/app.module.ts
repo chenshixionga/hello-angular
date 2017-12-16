@@ -10,6 +10,11 @@ import { routing } from './app.routes';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryTodoDbService } from './todo/todo-data';
 import { TodoModule } from './todo/todo.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimationComponent } from './test/animation/animation.component';
+import { AnimationPipe } from './test/animation.pipe';
+import { TestPipeComponent } from './test/test-pipe/test-pipe.component';
+import { FetchPipe } from './test/fetch.pipe';
 
 
 @NgModule({
@@ -17,11 +22,16 @@ import { TodoModule } from './todo/todo.module';
     AppComponent,
     LoginComponent,
     UserComponent,
+    AnimationComponent,
+    AnimationPipe,
+    TestPipeComponent,
+    FetchPipe,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
     InMemoryWebApiModule.forRoot(InMemoryTodoDbService),
     routing,
     TodoModule

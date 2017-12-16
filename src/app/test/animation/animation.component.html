@@ -1,0 +1,23 @@
+<button
+  mdl-button mdl-button-type="raised"
+  mdl-colored="primary"
+  mdl-ripple type="submit"
+  [@loginState]="loginBtnState"
+  (mouseenter)="toggleLoginState(true)"
+  (mouseleave)="toggleLoginState(false)">
+  Login
+</button>
+<button (click)="show($event)">事件</button>
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<p>The hero's birthday is {{ birthday | date:'yyyy-MM-dd'}}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+<p>The hero's birthday is {{ birthday | date :'fullDate'}}</p>
+<p>The hero's birthday is {{ birthday | date|uppercase}}</p>
+<p>The hero's birthday is {{ birthday | date|lowercase}}</p>
+<p>The hero's birthday is {{ birthday | date}}</p>
+<p>{{money | currency:'￥' }}</p>
+<p>{{percent | percent }}</p>
+<p>{{power|animation:factor}}</p>
+<p>power:<input type="text" [(ngModel)]="power"></p>
+<p>factor:<input type="text" [(ngModel)]="factor"></p>
+<p>{{'hello world' | slice:2}}</p>
