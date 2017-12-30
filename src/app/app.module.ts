@@ -15,7 +15,12 @@ import { AnimationComponent } from './test/animation/animation.component';
 import { AnimationPipe } from './test/animation.pipe';
 import { TestPipeComponent } from './test/test-pipe/test-pipe.component';
 import { FetchPipe } from './test/fetch.pipe';
-
+import { EchartsModule} from './echarts/echarts.module';
+import { AppLightHightDirective } from './test/app-light-hight.directive';
+import { TestDirectiveComponent } from './test/test-directive/test-directive.component';
+import { ConstructionDirective } from './test/construction.directive';
+import { ParentComponent } from './test/parent/parent.component';
+import { ChildComponent } from './test/child/child.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,11 @@ import { FetchPipe } from './test/fetch.pipe';
     AnimationPipe,
     TestPipeComponent,
     FetchPipe,
+    AppLightHightDirective,
+    TestDirectiveComponent,
+    ConstructionDirective,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +44,8 @@ import { FetchPipe } from './test/fetch.pipe';
     BrowserAnimationsModule,
     InMemoryWebApiModule.forRoot(InMemoryTodoDbService),
     routing,
-    TodoModule
+    TodoModule,
+    EchartsModule
   ],
   providers: [
     {provide: 'auth',  useClass: AuthService}

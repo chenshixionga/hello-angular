@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing } from './todo.routes';
 import { TodoComponent } from './todo.component';
@@ -32,6 +32,7 @@ import { TrimSpacePipe } from './trim-space.pipe';
     routing
   ],
   providers: [
+
   ],
   bootstrap: [TodoComponent]
 })

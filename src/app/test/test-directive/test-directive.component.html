@@ -1,0 +1,8 @@
+<p appLightHight= 'green'>
+  test-directive works!
+</p>
+<div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #elseBlock>eles Block</ng-template>
+<ng-template #thenBlock>then Block</ng-template>
+<ng-template [ngIf]="!condition"><div>简单测试</div></ng-template>
+<div *appUless="condition" >自定义结构型指令</div>

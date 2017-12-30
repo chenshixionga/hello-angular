@@ -1,0 +1,14 @@
+<p>
+  parent works!
+</p>
+<input type="text" placeholder="请输入城市名" [(ngModel)]="province.city"/>
+<input type="text" placeholder="改变命字" [(ngModel)]="child.name" (ngModelChange)="nameChange($event)"/>
+<p>{{province.city}}</p>
+<div>
+  <div>姓名：{{child.name}}</div>
+  <div>年龄：{{child.age}}</div>
+  <div>薪资：{{child.salary}}</div>
+</div>
+<app-child [child]="child" [province]="province"></app-child>
+<app-child [child]="child" [province]="province"></app-child>
+

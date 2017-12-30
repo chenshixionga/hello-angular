@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ElementRef, } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ElementRef } from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/Observable';
 import 'rxjs/add/operator/debounceTime';
