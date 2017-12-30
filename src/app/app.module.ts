@@ -21,6 +21,7 @@ import { TestDirectiveComponent } from './test/test-directive/test-directive.com
 import { ConstructionDirective } from './test/construction.directive';
 import { ParentComponent } from './test/parent/parent.component';
 import { ChildComponent } from './test/child/child.component';
+import { ChildService } from './test/child/child.service'
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { ChildComponent } from './test/child/child.component';
     EchartsModule
   ],
   providers: [
-    {provide: 'auth',  useClass: AuthService}
+    {provide: 'auth',  useClass: AuthService},ChildService
   ],
   bootstrap: [AppComponent]
 })

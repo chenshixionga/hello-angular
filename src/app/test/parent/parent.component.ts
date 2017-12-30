@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { child } from '../child/child.model';
-
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
@@ -11,6 +10,11 @@ export class ParentComponent implements OnInit {
   constructor() { }
   province={'city':'','name':''}
   child:child
+  child1={
+    'name':'kankan1',
+    'age': 21,
+    'salary':5007
+  }
 
   ngOnInit() {
     this.child = new child()
@@ -22,3 +26,4 @@ export class ParentComponent implements OnInit {
     console.log(value)
   }
 }
+
