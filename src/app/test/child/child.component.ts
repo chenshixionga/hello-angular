@@ -17,14 +17,14 @@ export class ChildComponent implements OnInit {
   multiple:string
   @Input() province: object;
   @Input() MultipleServiceInstance:string
-  @Input()
-  set child(child: child) {
+  @Input() child:child
+  /*set child(child: child) {
     this._child = child;
   }
 
   get child() {
     return this._child;
-  }
+  }*/
 
   ngOnInit() {
     this.multiple = this.childService.MultipleServiceInstance(this.MultipleServiceInstance)

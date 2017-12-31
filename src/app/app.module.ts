@@ -22,6 +22,7 @@ import { ConstructionDirective } from './test/construction.directive';
 import { ParentComponent } from './test/parent/parent.component';
 import { ChildComponent } from './test/child/child.component';
 import { ChildService } from './test/child/child.service'
+import { HerosFormModule } from './hero/heros-form/heros-form.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ChildService } from './test/child/child.service'
     InMemoryWebApiModule.forRoot(InMemoryTodoDbService),
     routing,
     TodoModule,
-    EchartsModule
+    EchartsModule,
+    HerosFormModule
   ],
   providers: [
     {provide: 'auth',  useClass: AuthService},ChildService
