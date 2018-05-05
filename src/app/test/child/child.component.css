@@ -1,0 +1,10 @@
+:host(.active){
+  display: block;
+  border: 1px solid red;
+}
+:host-context(.theme) p{
+  color:yellow;
+}
+.childProvince{
+  color: green;
+}

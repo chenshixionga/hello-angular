@@ -3,7 +3,9 @@
 </p>
 <input type="text" placeholder="请输入城市名" [(ngModel)]="province.city"/>
 <input type="text" placeholder="改变命字" [(ngModel)]="child.name" (ngModelChange)="nameChange($event)"/>
-<app-child [child]="child" [province]="province" MultipleServiceInstance="one">测试ngcontent,是否可用</app-child>
-<app-child [child]="child" [province]="province" MultipleServiceInstance="two"></app-child>
-<app-child [child]="child1" [province]="province" MultipleServiceInstance="three"></app-child>
+<app-child class="active" [child]="child" [province]="province" MultipleServiceInstance="one">测试ngcontent,是否可用
+</app-child>
+
+<app-child [child]="child" class="theme" [province]="province" MultipleServiceInstance="two"></app-child>
+<app-child class="province" [child]="child1" [province]="province" MultipleServiceInstance="three"></app-child>
 

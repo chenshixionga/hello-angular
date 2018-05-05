@@ -23,7 +23,7 @@ import { ParentComponent } from './test/parent/parent.component';
 import { ChildComponent } from './test/child/child.component';
 import { ChildService } from './test/child/child.service'
 import { HerosFormModule } from './hero/heros-form/heros-form.module';
-
+import { DynamicComponentModule } from './dynamic-component/dynamic-component.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +48,8 @@ import { HerosFormModule } from './hero/heros-form/heros-form.module';
     routing,
     TodoModule,
     EchartsModule,
-    HerosFormModule
+    HerosFormModule,
+    DynamicComponentModule
   ],
   providers: [
     {provide: 'auth',  useClass: AuthService},ChildService
